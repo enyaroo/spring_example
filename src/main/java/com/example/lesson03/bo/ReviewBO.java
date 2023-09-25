@@ -18,4 +18,14 @@ public class ReviewBO {
 		return reviewMapper.selectReview(id);
 	}
 	
+	// input : Review(단건)
+	// output : int(성공된 행의 개수)
+	public int addReview(Review review) {
+		return reviewMapper.insertReview(review);
+	}
+	
+//	addReviewAsField(4, "콤비네이션R", "박보검", 5.0, "존맛탱");
+	public int addReviewAsField(int storeId, String menu, String userName, Double point, String review) {
+		return reviewMapper.insertReviewAsField(storeId, menu, userName, point, review);
+	}
 }
