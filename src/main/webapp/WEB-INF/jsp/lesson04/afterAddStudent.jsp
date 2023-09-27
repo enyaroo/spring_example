@@ -9,42 +9,43 @@
 			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 	
-			<title>${title}</title>
+			
+			<title>추가된 학생 정보</title>
 		</head>
 		<body>
 			<div class="container">
-				<!-- EL (Expression Language) -->
-				<h1>${title}</h1>
+				<h1>학생 정보</h1>
 				<table class="table table-striped text-center">
 					<tr>
 						<th>번호</th>
-						<td>${result.id}</td>
+						<td>${student.id}</td>
 					</tr>
 					<tr>
 						<th>이름</th>
-						<td>${result.name}</td>
+						<td>${student.name}</td>
 					</tr>
 					<tr>
 						<th>생년월일</th>
-						<td>${result.yyyymmdd}</td>
+						<td>${student.phoneNumber}</td>
 					</tr>
 					<tr>
 						<th>이메일 주소</th>
-						<td>${result.email}</td>
+						<td>${student.email}</td>
 					</tr>
 					<tr>
-						<th>자기소개</th>
-						<td>${result.introduce}</td>
+						<th>장래희망</th>
+						<td>${student.dreamJob}</td>
 					</tr>
 					<tr>
 						<th>생성일</th>
-						<td>${result.createdAt}</td>
+						<td>${student.createdAt}</td>
 					</tr>
 					<tr>
 						<th>수정일</th>
-						<td>${result.updatedAt}</td>
+						<td>${student.updatedAt}</td>
 					</tr>
 				</table>
+				<a class="btn btn-success" href="http://localhost/lesson04/ex02/add-student-view">추가하러 가기</a>
 			</div>
 		</body>
 	</html>
