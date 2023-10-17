@@ -24,4 +24,10 @@ public class UserBO {
 		return userMapper.selectLatestUser();
 	}
 	
+	// input : name
+	// output : boolean(중복일때 true)
+	public boolean existUserByName(String name) {
+		return userMapper.existUserByName(name);
+	}
+	
 }
